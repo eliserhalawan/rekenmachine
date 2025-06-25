@@ -2,31 +2,38 @@ body {
     font-family: sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 100px;
-    background-color: #f3f4f6;
+    background-color: coral;
   }
 
   .Rekenmachine {
     background-color: white;
     padding: 50px;
     border-radius: 8px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    width: 300px;
 
   }
 
   #display {
-    width: 65%;
+    width: 101%;
     font-size: 2rem;
     padding: 10px;
     margin-bottom: 10px;
-    text-align: center;
     box-sizing: border-box;
+    background-color: lightblue;
+    border-radius: 8px;
+    border-color: black;
   }
 
   .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 60px);
+    grid-template-columns: repeat(4, 65px);
     gap: 10px;
+    justify-content: center;
+    width: 100%;
   }
 
   button {
@@ -43,9 +50,20 @@ body {
     background-color: orange;
   }
 
-  button:nth-child(16):hover {
-    background-color: #22c55e;
+  button:nth-child(13) {
+    background-color: rgb(228, 58, 58);
+  }
 
+
+  button:nth-child(16):hover {
+    background-color: rgb(230, 203, 138);
+  }
+
+  button:nth-child(4),
+  button:nth-child(8),
+  button:nth-child(12),
+  button:nth-child(15) {
+    background-color: darkgray;
   }
 
   button:hover {
